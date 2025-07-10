@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add these to your head section -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Form Maker Application</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Form Maker</h1>
+            <p class="app-description">Create custom forms with different types and designs</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="app-container">
+            <div class="form-builder">
+                <h2>Form Builder</h2>
+                
+                <div class="form-group">
+                    <label for="form-title">Form Title</label>
+                    <input type="text" id="form-title" placeholder="Enter form title">
+                </div>
+                
+                <div class="form-group">
+                    <label for="form-type">Form Type</label>
+                    <select id="form-type">
+                        <option value="contact">Contact Form</option>
+                        <option value="survey">Survey Form</option>
+                        <option value="registration">Registration Form</option>
+                        <option value="feedback">Feedback Form</option>
+                        <option value="custom">Custom Form</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="form-design">Form Design</label>
+                    <select id="form-design">
+                        <option value="default">Default</option>
+                        <option value="modern">Modern</option>
+                        <option value="elegant">Elegant</option>
+                        <option value="minimalist">Minimalist</option>
+                    </select>
+                </div>
+                
+                <div id="form-fields">
+                    <!-- Fields will be added here -->
+                </div>
+                
+                <div class="form-group">
+                    <button class="add-field-btn" id="add-field">+ Add Field</button>
+                </div>
+                
+                <div class="form-group">
+                    <button class="download-btn" id="download-form">Create Form</button>
+                </div>
+                <button class="download-btn pdf-btn" id="download-pdf">Download as PDF</button>
+            </div>
+            
+            <div class="form-preview default" id="form-preview">
+                <h3 class="form-title-preview">Form Preview</h3>
+                <div id="preview-fields">
+                    <!-- Preview fields will be shown here -->
+                    <p>Your form fields will appear here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

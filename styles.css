@@ -1,0 +1,216 @@
+
+        :root {
+            --primary-color: #4285f4;
+            --secondary-color: #34a853;
+            --accent-color: #ea4335;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        .app-description {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        .app-container {
+            display: flex;
+            gap: 30px;
+        }
+
+        .form-builder {
+            flex: 1;
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-preview {
+            flex: 1;
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        select, input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .pdf-btn {
+    background-color: #f4b400;
+    margin-top: 10px;
+}
+
+.pdf-btn:hover {
+    background-color: #e0a800;
+}
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #3367d6;
+        }
+
+        .add-field-btn {
+            background-color: var(--secondary-color);
+            margin-top: 10px;
+        }
+
+        .add-field-btn:hover {
+            background-color: #2d9249;
+        }
+
+        .download-btn {
+            background-color: var(--accent-color);
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .download-btn:hover {
+            background-color: #d33426;
+        }
+
+        .field-item {
+            background-color: var(--light-color);
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .remove-field {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .remove-field:hover {
+            background-color: #d33426;
+        }
+
+        .form-title-preview {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        /* Different form designs */
+        .form-preview.default {
+            border-top: 5px solid var(--primary-color);
+        }
+
+        .form-preview.modern {
+            background-color: #f8f9fa;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .form-preview.elegant {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-preview.minimalist {
+            background-color: #fff;
+            border: none;
+            box-shadow: none;
+        }
+
+        /* Field styles for different designs */
+        .modern .form-field {
+            background-color: white;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .elegant .form-field {
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+
+        .minimalist .form-field {
+            margin-bottom: 15px;
+        }
+
+        .minimalist label {
+            font-weight: normal;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .app-container {
+                flex-direction: column;
+            }
+        }
+    
